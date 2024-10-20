@@ -1,5 +1,7 @@
-console.log('funguju!');
+const handleBulb = () => {
+  const bulbElm = document.querySelector('.bulb');
+  bulbElm.classList.toggle('bulb--on');
+};
 
-const bulbElm = document.querySelector('bulb');
-bulbElm.classList.add('bulb--on')
-
+document.addEventListener('keydown', handleBulb);
+  
